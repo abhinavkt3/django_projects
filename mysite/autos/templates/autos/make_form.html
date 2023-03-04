@@ -1,0 +1,14 @@
+<meta name="dj4e" content="5de467a7575b9538de41b90d8df790b7">
+
+{% extends "base_bootstrap.html" %}
+
+{% block content %}
+  <form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit">
+    <input type="submit" onclick="window.location='{% url 'autos:all' %}' ; return false;" value="Cancel">
+  </form>
+{% endblock %}

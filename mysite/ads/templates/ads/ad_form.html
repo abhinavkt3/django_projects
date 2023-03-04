@@ -1,0 +1,13 @@
+<meta name="dj4e" content="5de467a7575b9538de41b90d8df790b7">
+% extends "base_menu.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<p>
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Submit">
+    <input type="submit" value="Cancel" onclick="window.location.href='{% url 'ads:all' %}';return false;">
+  </form>
+</p>
+{% endblock %}
