@@ -149,10 +149,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'KeshavJrall$ads',
-        'USER': 'KeshavJrall',
-        'PASSWORD': '#Keshav@001',
-        'HOST': 'KeshavJrall.mysql.pythonanywhere-services.com',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
          'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
